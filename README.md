@@ -37,6 +37,9 @@ Installed software:
 * [MailCatcher](http://mailcatcher.me/)
 * [Composer](http://getcomposer.org/)
 * Phing
+
+Opt-in software (uncomment in Vagrantfile to install):
+
 * Drupal utils:
     * [Drush](http://drupal.org/project/drush)
 * Wordpress utils:
@@ -72,7 +75,7 @@ The guests local 3306 port is available on the host at port 33066. It is also av
 
 phpMyAdmin is available on every domain. For example:
 
-    http://local.dev/phpmyadmin
+    http://local.dev:8080/phpmyadmin
 
 ### XDebug and webgrind
 
@@ -84,11 +87,11 @@ integrated debugger like Eclipse PDT, it will do this for you).
 XDebug is also configured to generate cachegrind profile output on demand by 
 adding GET variable XDEBUG_PROFILE to your URL. For example:
 
-    http://local.dev/index.php?XDEBUG_PROFILE
+    http://local.dev:8080/index.php?XDEBUG_PROFILE
 
 Webgrind is available on each domain. For example:
 
-    http://local.dev/webgrind
+    http://local.dev:8080/webgrind
 
 It looks for cachegrind files in the `/tmp` directory, where xdebug leaves them.
 
