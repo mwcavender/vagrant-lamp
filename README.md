@@ -37,6 +37,9 @@ Installed software:
 * [MailCatcher](http://mailcatcher.me/)
 * [Composer](http://getcomposer.org/)
 * Phing
+
+Opt-in software (uncomment in Vagrantfile to install):
+
 * Drupal utils:
     * [Drush](http://drupal.org/project/drush)
 * Wordpress utils:
